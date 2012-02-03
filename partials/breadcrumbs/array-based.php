@@ -41,7 +41,9 @@
 	foreach ($nodes as $url => $title) {
 		$navigation_nodes[] = "<a href=\"{$url}\">{$title}</a>";
 	}
-	$navigation_nodes[] = '<a href="'.Phpr::$request->getCurrentUri().'" class="current">' . $this->page->title . '</a>';
+	if (Phpr::$request->getCurrentUri() != '/')
+		$navigation_nodes[] = '<a href="'.Phpr::$request->getCurrentUri().'" class="current">' . $this->page->title . '</a>';
 ?>
 
 <?= join(' &raquo; ', $navigation_nodes) ?>
+
