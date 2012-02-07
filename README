@@ -1,2 +1,9 @@
-This is a collection of pages, partials, helpers, and other miscellaneous code
-to speed your development of LemonStand sites.
+Lemonstand CMS Repository
+=============================
+
+Welcome to the ØpenØrchard CMS repository. This is our open library of CMS pages, partials and templates for Lemonstand. You can use these for building blocks in client shops, themes or your own site. They are meant to provide robust and proven solutions to common problems in any site. 
+
+Structure
+---------
+
+The root folders match those of the template folder used by Lemonstand, but child folders ARE NOT DIRECTLY IMPORTABLE. To enable us to store multiple solutions from simple, to advanced, to seemingly overcomplicated, we have opted to maintain a folder for each "solution" or family of solutions, which then contains what could/should be copied to the page/partial/template folder within Lemonstand's template directory.
